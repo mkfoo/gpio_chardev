@@ -4,7 +4,5 @@ OFLAGS = -O1
 data.json : dump
 	./dump > data.json
 
-dump : dump.c
+dump : test_02.c
 	$(CC) $(CFLAGS) $(OFLAGS) $< -o $@
-
-
